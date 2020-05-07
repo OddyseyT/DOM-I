@@ -87,3 +87,18 @@ contactInfo[0].children[3].textContent = siteContent ["contact"]["email"];
 let copy = document.querySelectorAll("footer");
 
 copy[0].textContent = siteContent ["footer"]["copyright"];
+
+let navColor = document.querySelectorAll("nav a");
+
+navColor.forEach( element => {
+
+  element.style.color = "green"; 
+});
+
+let newNav= document.createElement ('nav a');
+
+newNav.textContent = "Staff";
+
+const parentElement = document.querySelector ('header');
+
+parentElement.prepend(newNav);
