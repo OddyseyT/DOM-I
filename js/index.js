@@ -95,10 +95,18 @@ navColor.forEach( element => {
   element.style.color = "green"; 
 });
 
-let newNav= document.createElement ('nav a');
+let newNav= document.createElement ('a');
 
 newNav.textContent = "Staff";
 
-const parentElement = document.querySelector ('header');
+const parentElement = document.querySelector ('nav');
 
 parentElement.prepend(newNav);
+
+let newNav02 = document.createElement('a');
+
+newNav02.textContent = "Site Map";
+
+const parentElement02 = document.querySelector ('nav');
+
+parentElement02.appendChild(newNav02);
